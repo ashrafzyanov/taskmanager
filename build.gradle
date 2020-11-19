@@ -1,0 +1,25 @@
+plugins {
+  id 'org.jetbrains.kotlin.jvm' apply false
+}
+
+project(':taskmanager-server') {
+    apply plugin: 'org.jetbrains.kotlin.jvm'
+    apply plugin: 'application'
+
+    mainClassName = 'com.ashrafzyanov.taskmanager.server.App'
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        implementation 'io.netty:netty-all:4.1.54.Final'
+        implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+        testImplementation 'org.jetbrains.kotlin:kotlin-test'
+        testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
+    }
+}
+
+project(':taskmanager-client') {
+
+}

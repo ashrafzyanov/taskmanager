@@ -1,0 +1,10 @@
+pluginManagement {
+  plugins {
+        id 'org.jetbrains.kotlin.jvm' version "$kotlinVersion"
+    }
+}
+
+rootProject.name = 'TaskManager'
+
+include 'taskmanager-server'
+include 'taskmanager-client'
