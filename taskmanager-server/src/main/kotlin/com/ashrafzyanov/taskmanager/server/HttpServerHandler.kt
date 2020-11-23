@@ -7,10 +7,6 @@ import java.util.*
 
 class HttpServerHandler : SimpleChannelInboundHandler<Objects>() {
     override fun channelRead0(ctx: ChannelHandlerContext?, msg: Objects?) {
-
-        if (msg is HttpRequest) {
-
-        }
     }
 
 }
