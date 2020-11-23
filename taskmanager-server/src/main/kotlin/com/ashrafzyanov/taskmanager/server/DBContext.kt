@@ -13,7 +13,11 @@ fun main(args: Array<String>) {
             it[name] = "St. Peterburg"
         } get Cities.id
 
-        println("Cities: ${Cities.selectAll()}")
+        Cities.select {
+            Cities.name.eq("Moscow")
+        }.forEach {
+            println("${it[Cities.name]}")
+        }
     }
 }
 
